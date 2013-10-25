@@ -1,0 +1,20 @@
+.modal-overlay
+.modal-dialog
+  .modal-header
+    Оставьте заявку и наш специлист проконсультирует вас по этой услуге
+  .body
+    %form{action: '#'}
+      %input{type: :text, name: :username, placeholder: 'Ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Ваш телефон ( +7 903 777 77 77 )'}
+      %button.send-order{goal: 'CALL'}
+        Оставить заявку
+
+.modal-thank-you
+  .modal-header
+    Спасибо!
+  .body
+    Мы свяжемся с вами уже очень скоро.
+
+
+    %button#hide-thank-you
+      Я буду ждать!
