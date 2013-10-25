@@ -8,6 +8,7 @@
   background: #000
   opacity: 0
   cursor: pointer
+  z-index: 9998
 
 
 .modal-dialog
@@ -20,6 +21,7 @@
   margin-left: -490px
   margin-bottom: -125px
   background: #f0f3f3
+  z-index: 9999
 
   .modal-header
     height: 30px
@@ -36,7 +38,7 @@
 
 
     input
-      width: 254px
+      width: 280px
       height: 40px
       border: 1px solid #eee
       font-size: 16px
@@ -54,10 +56,11 @@
       text-align: center
       cursor: pointer
       color: #fff
-      background: #4bc1d2
+      background: #e74c3c
+      box-shadow: 0px 5px 0 #c0392b
       -webkit-transition: all 0.2s
       &:hover
-        background: #eb5b4c
+        background: #cb3610
 
 
 .modal-thank-you
@@ -70,6 +73,7 @@
   margin-top: -100px
   margin-right: -200px
   background: #f0f3f3
+  z-index: 9999
 
   .modal-header
     height: 30px
