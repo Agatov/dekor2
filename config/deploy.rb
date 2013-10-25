@@ -2,7 +2,7 @@
 require 'bundler/capistrano'
 
 set :application, "dekor"
-set :repository,  "git@github.com:Agatov/dekor.git"
+set :repository,  "git@github.com:Agatov/dekor2.git"
 
 set :scm, :git
 

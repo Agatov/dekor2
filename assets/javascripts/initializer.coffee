@@ -2,7 +2,7 @@ $ ->
 
   $("#slides, #slides2, #slides3, #slides4, #slides5").slidesjs({
     width: 500,
-    height: 300,
+    height: 375,
     pagination: {
       active: false
     }
