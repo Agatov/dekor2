@@ -39,18 +39,31 @@
           .name
             Для себя
           .text
-            Вы хотите придать индивидуальности вашей квартире или дому
+            Вы счастливый обладатель квартиры с ремонтом. Вы хотите изменить наскучивший интерьер, но не хотите делать ремонт.
         .block
           .name
-            Для работы
+            Вы купили квартиру
           .text
-            Вы занимаетесь дизайном интерьеров и хотите расширить перечень ваших услуг.
-            Мы с удовольствием будем сотрудничать с вами
+            Вы заказали дизайн-проект,
+            но в нем присутствуют не только строительные, отделочные, но и художественные работы
         .block.last
           .name
-            Для ресторана
+            Вы снимаете квартиру
           .text
-            Вы ресторатор и вашему ресторану нужно придать индивидуальности
+            Кардинальные перемены не актуальны, но все же хочется что-то поменять и добавить уюта
+
+        .block.big
+          .name
+            ВЫ ДИЗАЙНЕР ИЛИ АРХИТЕКТОР
+          .text
+            Вы занимаетесь дизайном интерьеров и в Ваших проектах есть элементы художественной отделки.
+            Вы устали обучать строителей и не хотите головной боли по-поводу качества и сроков выполняемых работ
+
+        .block.big.last
+          .name
+            ВЫ СТРОИТЕ РЕСТОРАН, МАГАЗИН ИЛИ ОТЕЛЬ
+          .text
+            Мы можем предложить Вам все виды декоративных штукатурок и росписи, а также разработать новые специально для Вашего проекта
 
 
 %section.bordered
@@ -83,16 +96,15 @@
             .button.order-call{style: 'position: absolute; bottom: 5px; left: 0px'}
               Узнать подробнее
 
-        -#.line
-        -#.work.even
+        .line
+        .work.even
           .slides.right
             .slides-block
               #slides2
-                %img{src: 'images/samples/2/2.jpg', width: 500}
-                %img{src: 'images/samples/2/1.jpg', width: 500}
-                %img{src: 'images/samples/2/3.jpg', width: 500}
-                %img{src: 'images/samples/2/4.jpg', width: 500}
-                %img{src: 'images/samples/2/5.jpg', width: 500}
+                %img{src: 'images/samples/5/2.jpg', width: 500}
+                %img{src: 'images/samples/5/1.jpg', width: 500}
+                %img{src: 'images/samples/5/3.jpg', width: 500}
+                %img{src: 'images/samples/5/4.jpg', width: 500}
                 .slide-next.slidesjs-next.slidesjs-navigation
                 .slide-prev.slidesjs-previous.slidesjs-navigation
           .content
@@ -129,7 +141,7 @@
               Узнать подробнее
 
         .line
-        .work
+        .work.even
           .slides.right
             .slides-block
               #slides2
@@ -172,14 +184,14 @@
             .button.order-call{style: 'position: absolute; bottom: 5px; left: 0px'}
               Узнать подробнее
 
-        -#.line
-        -#.work.last.even
+        .line
+        .work.last.even
           .slides.right
             .slides-block
               #slides4
-                %img{src: 'images/big/bg2.jpg', width: 500}
-                %img{src: 'images/big/bg2.jpg', width: 500}
-                %img{src: 'images/big/bg2.jpg', width: 500}
+                %img{src: 'images/samples/6/1.jpg', width: 500}
+                %img{src: 'images/samples/6/2.jpg', width: 500}
+                %img{src: 'images/samples/6/3.jpg', width: 500}
                 .slide-next.slidesjs-next.slidesjs-navigation
                 .slide-prev.slidesjs-previous.slidesjs-navigation
           .content
@@ -209,15 +221,6 @@
         Отправить заявку
 
 
--#%section
-  .white-background
-    .wrapper
-      .section-title
-        %h2 Наша команда
-      .team-wrapper
-        = haml :_team
-
-
 
 %section.bordered
   .white-background
@@ -230,95 +233,45 @@
           .stage-number
             1
           .stage-desc
-            Вы оставляете заявку и наш менеджер связявается с вами в течение 15 минут
+            Вы звоните нам или оставляете заявку и специалист связывается с Вами
 
         .stage
           .stage-number
             2
           .stage-desc
-            Мы обговариваем с вами все детали сотрудничества, рассчитываем стоимость работы
+            Мы обговариваем с Вами все детали, рассчитываем стоимость работы
 
         .stage
           .stage-number
             3
           .stage-desc
-            Заключается договор и вы делаете 50% предоплаты
+            Заключаем договор и вы вносите 50% предоплаты
 
         .stage
           .stage-number
             4
           .stage-desc
-            Мы рисуем эскизы и утверждаем их с вами.
+            В зависимости от задачи мы рисуем эскизы или изготавливаем образцы и утверждаем их с Вами
 
         .stage
           .stage-number
             5
           .stage-desc
-            По утвержденным эскизам, наши мастера проводят работу на вашем объекте.
+            По утвержденным эскизам и образцам наши мастера проводят работу на Вашем объекте
 
         .stage
           .stage-number
             6
           .stage-desc
-            Вы доплачиваете оставшиеся 50% и мы взаимно довольны сотрудничеством
+            По завершении работ вы оплачиваете оставшиеся 50%
 
 
--#%section.bordered
-  .white-background
-    .wrapper
-      .section-title
-        %h2 Отзывы наших клиентов
+= haml :_team
+= haml :masters
+= haml :_clients
 
-      .review-block
-        .avatar
-          %img{src: '/images/avatar1.jpg'}
 
-        .content
-          .name
-            Александр Петраков, генеральный директор компании "Чайхона  №1"
-          .text
-            Так будут оформлены отзывы в текстовом виде, если они у вас есть. А если отзывов в текстовом виде у вас нету,
-            то мы их вам напишем. Так будут оформлены отзывы в текстовом виде, если они у вас есть.
-            А если отзывов в текстовом виде у вас нету, то мы их вам напишем.
 
-      .line
-      .review-block
-        .avatar
-          %img{src: '/images/avatar1.jpg'}
-
-        .content
-          .name
-            Александр Петраков
-          .text
-            Так будут оформлены отзывы в текстовом виде, если они у вас есть. А если отзывов в текстовом виде у вас нету,
-            то мы их вам напишем. Так будут оформлены отзывы в текстовом виде, если они у вас есть.
-            А если отзывов в текстовом виде у вас нету, то мы их вам напишем.
-
-      .line
-      .review-block
-        .avatar
-          %img{src: '/images/avatar1.jpg'}
-
-        .content
-          .name
-            Александр Петраков
-          .text
-            Так будут оформлены отзывы в текстовом виде, если они у вас есть. А если отзывов в текстовом виде у вас нету,
-            то мы их вам напишем. Так будут оформлены отзывы в текстовом виде, если они у вас есть.
-            А если отзывов в текстовом виде у вас нету, то мы их вам напишем.
-
-      .line
-      .review-block
-        .avatar
-          %img{src: '/images/avatar1.jpg'}
-
-        .content
-          .name
-            Александр Петраков
-          .text
-            Так будут оформлены отзывы в текстовом виде, если они у вас есть. А если отзывов в текстовом виде у вас нету,
-            то мы их вам напишем. Так будут оформлены отзывы в текстовом виде, если они у вас есть.
-            А если отзывов в текстовом виде у вас нету, то мы их вам напишем.
 
 
 %section
