@@ -24,9 +24,14 @@ GEM
     httparty (0.11.0)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
+    i18n (0.6.4)
     jsmin (1.0.1)
     json (1.8.0)
     kgio (2.8.0)
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mime-types (1.25)
     multi_json (1.7.7)
     multi_xml (0.5.3)
     net-scp (1.1.1)
@@ -36,6 +41,9 @@ GEM
     net-ssh (2.6.7)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
+    polyglot (0.3.3)
+    pony (1.5.1)
+      mail (>= 2.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -60,6 +68,9 @@ GEM
       rack (>= 1.0.0)
     thor (0.18.1)
     tilt (1.4.1)
+    treetop (1.4.15)
+      polyglot
+      polyglot (>= 0.3.1)
     unicorn (4.6.2)
       kgio (~> 2.6)
       rack
@@ -74,7 +85,9 @@ DEPENDENCIES
   coffee-script
   haml
   httparty
+  i18n
   json
+  pony
   sass
   shotgun
   sinatra
