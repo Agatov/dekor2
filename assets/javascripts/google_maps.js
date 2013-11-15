@@ -6,8 +6,8 @@ function initialize() {
     var styledMap = new google.maps.StyledMapType(featureOpts,{name: "Styled Map"});
 
     var mapOptions = {
-        zoom: 16,
-        center: new google.maps.LatLng(55.772, 37.66362),
+        zoom: 17,
+        center: new google.maps.LatLng(55.7738, 37.666),
         disableDefaultUI: true,
         scrollwheel: false,
         zoomControl: true,
@@ -24,7 +24,7 @@ function initialize() {
 
 
     var Marker = new google.maps.Marker({
-        position: new google.maps.LatLng(55.76, 37.66362),
+        position: new google.maps.LatLng(55.7738, 37.666),
         map: map,
         icon: {
             url: '/images/marker.png',
